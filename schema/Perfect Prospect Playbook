@@ -1,0 +1,102 @@
+# Perfect Prospect Meeting Playbook — Future Implementation Notes
+
+This document defines how the **Perfect Prospect Meeting Playbook** is intended to be
+captured, scored, and associated with an Opportunity in Revenue Runway.
+
+The schema intentionally supports this capability **before** automation is implemented,
+to avoid future refactoring.
+
+---
+
+## Purpose
+
+Historical deal analysis showed materially higher close rates when opportunities
+followed the **Perfect Prospect Meeting Playbook**.
+
+This playbook is designed to:
+- reinforce consistent sales behavior
+- capture structured win intelligence
+- support coaching and deal review
+- remain lightweight for founder-led sales motions
+
+---
+
+## Related Opportunity Fields (Schema)
+
+The following fields are already defined on the Opportunity object:
+
+- `won_reasons` (Multi-select)
+- `won_description` (Multi-line text)
+- `ppm_playbook_score` (Number)
+- `ppm_playbook_notes` (Multi-line text)
+
+These fields are **not required** in v1 and may be enforced later via workflow.
+
+---
+
+## Implementation Options (Progressive)
+
+### Option 1 — Manual Checklist + Score (Fastest)
+
+**Description**
+- Rep or founder completes a short checklist during or after deal review
+- Checklist may be implemented via:
+  - Google Form
+  - GHL Survey
+  - Manual review
+
+**Data Handling**
+- Score written to: `ppm_playbook_score`
+- Summary or highlights written to: `ppm_playbook_notes`
+
+**Notes**
+- No automation required
+- Suitable for founder-led or low-volume sales
+- Enables immediate learning capture
+
+---
+
+### Option 2 — Close Won Gate (Light Automation)
+
+**Trigger**
+- Opportunity stage transitions to **Close Won**
+
+**Enforcement Rules**
+- `won_reasons` must not be empty
+- `won_description` must not be empty
+- `ppm_playbook_score` may be required (optional)
+
+**Purpose**
+- Standardize win reviews
+- Improve consistency without heavy tooling
+- Support rep accountability when a sales team exists
+
+---
+
+### Option 3 — Auto-Note Insertion (Nice-to-Have)
+
+**Description**
+- Upon checklist or survey submission:
+  - A formatted note is automatically added to the Opportunity timeline
+
+**Purpose**
+- Preserve qualitative insight in the deal record
+- Reduce manual copying
+- Improve deal review context
+
+**Notes**
+- Optional enhancement
+- Not required for core Revenue Runway functionality
+
+---
+
+## Design Principles
+
+- Schema supports capability before automation exists
+- Founder-led sales should not be burdened by process
+- Automation is additive, not required
+- Win intelligence is treated as a strategic asset
+
+---
+
+#
