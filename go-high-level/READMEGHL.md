@@ -1,0 +1,1 @@
+### GHL platform overivew specifics
