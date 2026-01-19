@@ -16,6 +16,12 @@ Solution and pricing presented.
 3. Negotiate  
 Commercial, legal, or procurement adjustments.
 
+4. Win Review 
+Deal win pending review for automation.
+
+5. Loss Review  
+Deal loss pending review for automation. 
+
 4. Close Won  
 Deal successfully closed.
 
