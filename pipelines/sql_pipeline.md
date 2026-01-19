@@ -16,8 +16,8 @@ Solution and pricing presented.
 3. Negotiate  
 Commercial, legal, or procurement adjustments.
 
-4. Pending Win Review 
-Deal win pending review for automation.
+5. Pending Win Review  
+Deal win pending review for automation. 
 
 5. Pending Loss Review  
 Deal loss pending review for automation. 
