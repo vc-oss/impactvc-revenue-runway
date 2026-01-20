@@ -13,3 +13,4 @@ This repo does NOT duplicate field definitions.
 - GHL does not support required Opportunity fields
 - Survey fields must be mapped manually
 - Opportunity association must be preserved in survey links
+- In GHL, opportunity-level fields are stored on the Primary Deal Contact due to platform constraints.
