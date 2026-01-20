@@ -14,3 +14,4 @@ This repo does NOT duplicate field definitions.
 - Survey fields must be mapped manually
 - Opportunity association must be preserved in survey links
 - In GHL, opportunity-level fields are stored on the Primary Deal Contact due to platform constraints.
+- In GoHighLevel, opportunity-level fields are stored on the designated Primary Deal Contact due to platform constraints; the Account/Company remains the reporting and engagement unit.
