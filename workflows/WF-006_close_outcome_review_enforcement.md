@@ -33,7 +33,7 @@ WF-002 remains lifecycle date stamping (MQL/SQL). WF-006 is close outcome enforc
 - `win_review_completed_date` (Date) *(optional but recommended)*
 
 **Loss**
-- `loss_reason` (Single-select; enum `LOSS_REASON`)
+- `rr_loss_reason` (Single-select; enum `RR_LOSS_REASON`)
 - `loss_description` (Multi-line text) *(optional but recommended)*
 - `loss_review_completed` (Yes/No)
 - `loss_review_completed_date` (Date) *(optional but recommended)*
